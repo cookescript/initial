@@ -134,24 +134,16 @@
     if (typeof charset === 'function')
       callback = charset, charset = 'utf8';
 
-    if (typeof callback !== 'function')
-      callback = noop;
-
     fs.readFile(file, charset || 'utf8', function(err, data) {
       if (!err) data = parse(stripBOM(data));
-      callback(err, data);
+      (typeof callback !== 'function' ? callback : noop)(data);
     });
   };
 
 
   this.write = function(file, data, callback) {
-    var text;
-
-    if (typeof callback !== 'function')
-      callback = noop;
-
-    fs.writeFile(file, (text = this.stringify(data)), function() {
-      callback(text);
+    fs.writeFile(file, (data = this.stringify(data)), function() {
+      (typeof callback !== 'function' ? callback : noop)(data);
     });
   };
 
