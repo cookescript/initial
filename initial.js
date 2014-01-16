@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-(function(){
+(function() {
   var querystring, fs, parse;
   
   querystring = require('querystring');
