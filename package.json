@@ -1,0 +1,26 @@
+{
+  "name": "initial",
+  "version": "0.0.1",
+  "description": "Initialize your node/coffee project",
+  "main": "initial.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cookescript/initial.git"
+  },
+  "keywords": [
+    "initial",
+    "project",
+    "ini",
+    "inf"
+  ],
+  "author": {
+    "name": "Maofeng Zhang <cookescript@outlook.com>"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cookescript/initial/issues"
+  },
+  "readme": "initial\n=======\n\nInitialize your node/coffee project\n",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/cookescript/initial",
+}
